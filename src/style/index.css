@@ -1,0 +1,20 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+}
+
+.taglineContainer{
+    width: 20dvw;
+}
+
+.taglineContent {
+    color: white;
+}
+
+.headshot {
+    height: auto;
+    max-width: 60%; 
+    padding: 2rem;
+}
+
