@@ -44,14 +44,8 @@ ul {
     box-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
 }
 
-hr {
-    width: 95dvw;
-    margin-top: 1.5rem;
-    color: var(--primary-text-color);
-}
-
 .contentCard {
-    background-color: rgb(7, 44, 7);
+    background-color: var(--primary-content-card-background-color);
     padding: 10px;
     border-radius: 2px;
 

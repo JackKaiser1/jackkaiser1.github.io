@@ -1,0 +1,39 @@
+hr {
+    margin-top: 0;
+}
+
+p {
+    width: 90%;
+    font-size: clamp(0.8rem, 1rem + 1dvw, 1rem);
+}
+
+.thoughtwellLogo {
+    width: 100%;
+}
+
+.py808Img {
+    width: 80%;
+    box-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
+}
+
+.portfolioContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.projectCard {
+    background-color: var(--primary-content-card-background-color);
+    padding: 10px;
+    border-radius: 2px;
+
+    width: 60dvw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 2px 2px 2px rgb(6, 33, 11);
+}

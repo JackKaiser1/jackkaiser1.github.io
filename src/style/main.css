@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: rgb(234, 234, 234);
     --secondary-text-color: rgb(202, 202, 202);
+    --primary-content-card-background-color: rgb(7, 44, 7);
 }
 
 html , body {
@@ -16,13 +17,26 @@ h1 {
     color: var(--primary-text-color);
 }
 
+h2 {
+    color: var(--primary-text-color);
+}
+
+h3 {
+    color: var(--primary-text-color);
+}
 p {
-    color: green;
+    color: var(--secondary-text-color);
 }
 
 a {
     text-decoration: none;
     color: var(--secondary-text-color);
+}
+
+hr {
+    width: 95%;
+    margin-top: 1.5rem;
+    color: var(--primary-text-color);
 }
 
 .navBar {
