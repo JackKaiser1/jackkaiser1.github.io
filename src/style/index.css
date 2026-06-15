@@ -1,20 +1,121 @@
+h2 {
+    color: var(--primary-text-color);
+    font-size: clamp(1rem, 1rem + 1dvw, 2rem);
+}
+
+p {
+    color: var(--secondary-text-color);
+}
+
+li {
+    color: var(--secondary-text-color);
+}
+
+ul {
+    width: 15dvw;
+}
+
+.projectTitle {
+    color: var(--primary-text-color);
+}
+
 .homeContainer {
     display: flex;
     flex-direction: row;
-    gap: 20rem;
+    align-items: top;
+    justify-content: left;
+    gap: 10rem;
 }
 
-.taglineContainer{
-    width: 20dvw;
-}
-
-.taglineContent {
-    color: white;
+.profileContainer {
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .headshot {
     height: auto;
     max-width: 60%; 
-    padding: 2rem;
+    width: 30%;
+    margin: 1rem 2rem;
+    object-fit: cover;
+
+    box-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
 }
 
+hr {
+    width: 95dvw;
+    margin-top: 1.5rem;
+    color: var(--primary-text-color);
+}
+
+.contentCard {
+    background-color: rgb(7, 44, 7);
+    padding: 10px;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    box-shadow: 2px 2px 2px rgb(6, 33, 11);
+}
+
+@media (max-width: 915px) {
+    .homeContainer {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 715px) {
+
+    .headshot {
+        display: none;
+    }
+
+    .homeContainer{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .profileContainer {
+        flex-direction: column;
+    }
+
+    .contentCard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80dvw;
+        gap: 2rem;
+    }
+
+    ul {
+        width: 60dvw;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .homeContainer{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .profileContainer {
+        flex-direction: column;
+    }
+
+    .contentCard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80dvw;
+        gap: 2rem;
+    }
+
+    ul {
+        width: 60dvw;
+    }
+
+} */
