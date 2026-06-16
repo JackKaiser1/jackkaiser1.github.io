@@ -1,7 +1,4 @@
-p {
-    width: 90%;
-    font-size: clamp(1rem, 1.5vw, 2rem);
-}
+
 
 h2 {
     font-size: clamp(2rem, 2vw, 3rem);
@@ -11,13 +8,13 @@ h2 {
 .portfolioContentContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: baseline;
     gap: 2rem;
 }
 
 .projectCard {
-    background-color: var(--primary-content-card-background-color);
+    /* background-color: var(--primary-content-card-background-color); */
     border-radius: 2px;
     margin: clamp(1rem, 1vh, 2rem) 0;
 
@@ -25,9 +22,9 @@ h2 {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 
-    box-shadow: var(--content-card-shadow);
+    /* box-shadow: var(--content-card-shadow); */
 
     --img-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
     --img-margin-botton: clamp(1rem, 1vh, 2rem);

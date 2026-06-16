@@ -3,6 +3,8 @@
     --secondary-text-color: rgb(202, 202, 202);
     --primary-content-card-background-color: rgb(7, 44, 7);
     --content-card-shadow: 2px 2px 6px 2px rgb(6, 33, 11);
+    --primary-background-color: rgb(22, 51, 25);
+    --secondary-background-color: rgb(6, 44, 6);
 }
 
 html , body {
@@ -16,10 +18,12 @@ html, body {
 
 h1 {
     color: var(--primary-text-color);
+    
 }
 
 h2 {
     color: var(--primary-text-color);
+    font-size: clamp(1rem, 1rem + 1dvw, 2rem);
 }
 
 h3 {
@@ -27,6 +31,7 @@ h3 {
 }
 p {
     color: var(--secondary-text-color);
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 a {
@@ -46,6 +51,8 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-image: linear-gradient(to top, var(--primary-background-color), var(--secondary-background-color));
 }
 
 .navElements {
