@@ -1,39 +1,70 @@
-hr {
-    margin-top: 0;
-}
-
 p {
     width: 90%;
-    font-size: clamp(0.8rem, 1rem + 1dvw, 1rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-.thoughtwellLogo {
-    width: 100%;
+h2 {
+    font-size: clamp(2rem, 2vw, 3rem);
 }
 
-.py808Img {
-    width: 80%;
-    box-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
-}
 
 .portfolioContentContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10rem;
+    justify-content: baseline;
+    gap: 2rem;
 }
 
 .projectCard {
     background-color: var(--primary-content-card-background-color);
-    padding: 10px;
     border-radius: 2px;
+    margin: clamp(1rem, 1vh, 2rem) 0;
 
-    width: 60dvw;
+    width: 70dvw;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    box-shadow: 2px 2px 2px rgb(6, 33, 11);
+    box-shadow: var(--content-card-shadow);
+
+    --img-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
+    --img-margin-botton: clamp(1rem, 1vh, 2rem);
+
+}
+
+.imgLink {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+.thoughtwellImg {
+    width: 100%;
+    margin-bottom: var(--img-margin-botton);
+    box-shadow: var(--img-shadow);
+    transition: transform 0.2s;
+}
+
+    .thoughtwellImg:hover {
+        transform: scale(1.05);
+    }
+
+.py808Img {
+    width: 100%;
+    margin-bottom: var(--img-margin-botton);
+    box-shadow: var(--img-shadow);
+    transition: transform 0.2s;
+}
+
+    .py808Img:hover {
+        transform: scale(1.05);
+    }
+
+
+@media (max-width: 715px) {
+    .projectCard {
+        width: 80dvw;
+    }
 }

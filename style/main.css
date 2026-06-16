@@ -2,6 +2,7 @@
     --primary-text-color: rgb(234, 234, 234);
     --secondary-text-color: rgb(202, 202, 202);
     --primary-content-card-background-color: rgb(7, 44, 7);
+    --content-card-shadow: 2px 2px 6px 2px rgb(6, 33, 11);
 }
 
 html , body {
