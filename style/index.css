@@ -5,6 +5,13 @@ p {
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
+ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 li {
     color: var(--secondary-text-color);
 }
@@ -14,13 +21,13 @@ li {
     color: var(--primary-text-color);
 }
 
-.homeContainer {
+/* .homeContainer {
     display: flex;
     flex-direction: column;
     align-items: top;
     justify-content: left;
     gap: 10rem;
-}
+} */
 
 .profileContainer {
     color: var(--primary-text-color);
@@ -29,21 +36,31 @@ li {
     align-items: center;
 }
 
+.skills {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
 .headshot {
     height: auto;
     max-width: 100%; 
-    width: 50%;
-    margin: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
     object-fit:cover;
+    border: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: rgb(88, 121, 93);
 
     box-shadow: 2px 2px 5px 1px rgb(3, 24, 2);
 }
 
 .contentCard {
     background-color: var(--primary-content-card-background-color);
-    padding: 10px;
-    border-radius: 2px;
+    padding: 4dvw;
+    border-radius: 3px;
     width: 70dvw;
+    margin-bottom: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -57,10 +74,24 @@ li {
 .cardHeader {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    align-items: start;
+    justify-content: left;
+    width: 100%;
+    /* gap: 5rem; */
 }
+
+.headShotContainer {
+    width: 40%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.contactLinks {
+    width: 10px;
+}
+
+
+
 
 @media (max-width: 915px) {
     .homeContainer {
@@ -70,13 +101,19 @@ li {
 
 @media (max-width: 715px) {
 
+
     .headshot {
-        display: none;
+        width: 100%;
     }
 
-    .homeContainer{
-        justify-content: center;
-        flex-direction: column;
+    .headShotContainer{
+        width: 50%;
+    }
+
+    .cardHeader {
+        flex-direction: row;
+        align-items: left;
+        gap: 2rem;
     }
 
     .profileContainer {
@@ -86,9 +123,9 @@ li {
     .contentCard {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: left;
         width: 80dvw;
-        gap: 2rem;
+        /* gap: 2rem; */
     }
 
     ul {
@@ -96,26 +133,3 @@ li {
     }
 }
 
-/* @media (max-width: 480px) {
-    .homeContainer{
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .profileContainer {
-        flex-direction: column;
-    }
-
-    .contentCard {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80dvw;
-        gap: 2rem;
-    }
-
-    ul {
-        width: 60dvw;
-    }
-
-} */

@@ -1,19 +1,25 @@
 :root {
     --primary-text-color: rgb(234, 234, 234);
     --secondary-text-color: rgb(202, 202, 202);
-    --primary-content-card-background-color: rgb(7, 44, 7);
+    --tertiary-text-color: rgb(160, 185, 160);
+
+    --primary-content-card-background-color: rgb(22, 52, 24);
     --content-card-shadow: 2px 2px 6px 2px rgb(6, 33, 11);
+
     --primary-background-color: rgb(22, 51, 25);
-    --secondary-background-color: rgb(6, 44, 6);
+    --secondary-background-color: rgb(15, 35, 17);
+
+
 }
 
-html , body {
+html, body {
     padding: 0;
     margin: 0;
 }
 
 html, body {
     background-color: rgb(22, 51, 25);
+    background-image: linear-gradient(to bottom, rgb(22, 51, 25), rgb(15, 35, 17));
 }
 
 h1 {
@@ -22,13 +28,24 @@ h1 {
 }
 
 h2 {
-    color: var(--primary-text-color);
-    font-size: clamp(1rem, 1rem + 1dvw, 2rem);
-}
+    color: var(--tertiary-text-color);
+    font-size: clamp(1rem, 2.5vw, 5rem);
+    margin: 0;
+    margin-bottom: clamp(2rem, 0.5vh, 3rem);
+}   
 
 h3 {
     color: var(--primary-text-color);
+    font-size: clamp(1rem, 1rem + 1dvw, 2rem);
+    margin-bottom: 1rem;
 }
+
+h4 {
+    color: var(--tertiary-text-color);
+    font-size: clamp(0.8rem, 0.8rem + 1dvw, 1.5rem);
+    margin: 0;
+}
+
 p {
     color: var(--secondary-text-color);
     font-size: clamp(1rem, 1.5vw, 2rem);
@@ -40,8 +57,9 @@ a {
 }
 
 hr {
-    width: 95%;
-    margin-top: 1.5rem;
+    padding: 0;
+    width: 98%;
+    margin: 0;
     color: var(--primary-text-color);
 }
 
@@ -52,7 +70,7 @@ hr {
     justify-content: center;
     align-items: center;
 
-    background-image: linear-gradient(to top, var(--primary-background-color), var(--secondary-background-color));
+    /* background-image: linear-gradient(to top, var(--primary-background-color), var(--secondary-background-color)); */
 }
 
 .navElements {

@@ -1,8 +1,8 @@
 
 
-h2 {
+/* h2 {
     font-size: clamp(2rem, 2vw, 3rem);
-}
+} */
 
 
 .portfolioContentContainer {
@@ -34,34 +34,45 @@ h2 {
 .imgLink {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 100%;
 }
 
-.thoughtwellImg {
-    width: 100%;
+.portfolioImg {
+    width: 50%;
     margin-bottom: var(--img-margin-botton);
+    margin-left: 1rem;
     box-shadow: var(--img-shadow);
     transition: transform 0.2s;
+    float: right;
 }
 
-    .thoughtwellImg:hover {
+    .portfolioImg:hover {
         transform: scale(1.05);
     }
 
-.py808Img {
-    width: 100%;
-    margin-bottom: var(--img-margin-botton);
-    box-shadow: var(--img-shadow);
-    transition: transform 0.2s;
+.projectDescription {
+    width: 50%;
 }
 
-    .py808Img:hover {
-        transform: scale(1.05);
-    }
 
+.projectContent {
+    height: auto;
+}
+
+.techstack {
+    color: rgb(147, 163, 150);
+    font-style: italic;
+}
 
 @media (max-width: 715px) {
     .projectCard {
         width: 80dvw;
+    }
+
+    .portfolioImg {
+        width: 60%;
+        margin: 0;
+        margin-left: 0.6rem;
+        float: right;
     }
 }

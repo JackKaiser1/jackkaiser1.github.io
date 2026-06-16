@@ -15,26 +15,26 @@
                 <h1>Jack Kaiser</h1>
             </a>
 
-            <div class="navElements">
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./about.html">About</a>
-            </div>
-
-            <hr>
+            <!-- <hr> -->
         </div>
 
         
-        <!-- <div class="homeContainer"> -->
             
             <div class="profileContainer">
-                <h1>Backend Focused Full-Stack Developer</h1>
                 <div class="contentCard">
-
+                    
+                    <h2>Backend Focused Full-Stack Developer</h2>
                     <div class="cardHeader">
-                        <img src="./assets/headshot_github.png" class="headshot">
+                        <div class="headShotContainer">
+                            <img src="./assets/headshot_github.png" class="headshot">
+                            <br>
+                            <a href="https://github.com/JackKaiser1" class="contactLinks">Github</a>
+                            <br>
+                            <a href="https://www.linkedin.com/in/jack-kaiser-57865a249/" class="contactLinks">LinkedIn</a>
+                        </div>
 
                         <ul>
-                            <h2>Skills</h2>
+                            <h3 class="skills">Skills</h3>
                             <li>Typescript, Python</li>
                             <br>
                             <li>Vue.js, HTML, CSS</li>
@@ -45,41 +45,41 @@
                         </ul>
                     </div>
 
-                    <h2>About</h2>
+                    
+
+                    <h3>About</h3>
+                    <hr>
                     <p>My development journey began in college where I learned the fundamentals of programming, frontend development, and electronic assembly through a degree in Digital Art. A class on physical computing opened my eyes to the flexible possibilities of user experience. Though the main topic was art, a project focused education enhanced my ability to think holistically about my ideas and taught me that design influences every step of the process when creating something. After college I dove deep into backend development through Boot.dev where I learned how data relationships formed the skeleton of every application I had gained proficiency in. Now I take my education in art and programming to create systems that provide a user with expressive solutions to niche problems. </p>
 
-                    <!-- <h2>Portfolio</h2> -->
+                    <h3>Portfolio</h3>
+                    <hr>
                     <div class="portfolioContentContainer">
                         <div class="projectCard">
-                            <h2>Thoughtwell</h2>
-                            <a href="https://github.com/JackKaiser1/thoughtwell" class="imgLink">
-                                <img class="thoughtwellImg" src="./assets/thoughtwell_demo_img.png" >
-                            </a>
-                            <!-- <hr> -->
-                            <p>Thoughtwell is a web application for working out new ideas in flexible notebooks that can be nested to form a hierarchical structure. This provides the user with the ability to freely follow spontaneous thought to any level of specificity while establishing a record of the natural branching of one's ideas.</p>
+                            <h4>Thoughtwell</h4>
+                            <p class="techstack">Typescript, Vue, Node, Express, PostgreSQL</p>
+                            <div class="projectContent">
+                                <a href="https://github.com/JackKaiser1/thoughtwell" class="imgLink">
+                                    <img class="portfolioImg" src="./assets/thoughtwell_demo_img.png" >
+                                </a>
+                                <p>Thoughtwell is a web application for working out new ideas in flexible digital notebooks. I enjoyed the simplicity and freedom that a regular notebook allowed for, but it became difficult to organize my notes across numerous topics.  Rich text editors gave me every feature I could dream of, but the litany of options became distracting.</p>
+                                <p>I required a solution to record ideas in the same spontaneous fashion as I can with a pen and paper while granting myself an organizational capability beyond the physical limitations of the common notebook. I decided to implement the nesting of notebooks to be able to establish a hierarchical structure around a central topic.  This allowed me to follow my ideas to any level of specificity while keeping a record of the natural branching of my thoughts.</p>
+                            </div>
                         </div>
 
                         <div class="projectCard">
-                            <h2>PY-808</h2>
-                            <a href="https://github.com/JackKaiser1/py-808" class="imgLink">
-                                <img src="./assets/py808.png" class="py808Img">
-                            </a>
-                            <!-- <hr> -->
-                            <p>PY-808 is a virtual drum machine based on the Roland TR-808 from 1980. This program can be used as a metronome to maintain a steady beat while practicing an instrument or simply as a way to explore rhythm. If you have never programmed a drum loop before, simply play around and see what you can come up with!</p>
+                            <h4>PY-808</h4>
+                            <p class="techstack">Python, Pygame Mixer, Custom Tkinter</p>
+                            <div class="projectContent">
+                                <a href="https://github.com/JackKaiser1/py-808" class="imgLink">
+                                    <img src="./assets/py808.png" class="portfolioImg">
+                                </a>
+                                <p>PY-808 is a virtual drum machine faithfully inspired by the Roland TR-808 from 1980. I built this program to be used in place of a metronome to maintain a steady beat while additionally reflecting the rhythmic expression of my playing.</p>
+                                <p>This program is equipped with a 16 channel mixer.  With each channel corresponding to a drum sample, patterns for each sample are sequenced and volume controlled independently. The user creates a rhythm by populating a cell in a sequence according to where in a 16th note subdivided measure they would like a drum sample to be played. All 16 individual layers are played concurrently, stacking together to form a drum pattern. With a minimalist design philosophy that gives the user room to explore within meaningful restrictions, PY-808’s functionality can be applied by the budding music producer all the way to the experienced rhythm programmer. </p>
+                            </div>
 
                     </div>
-
-        </div>
-
-                    
-
                 </div>
 
             </div>
-
-        <!-- </div> -->
-
-
-
     </body>
 </html>
