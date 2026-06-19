@@ -44,7 +44,12 @@ h4 {
     color: var(--tertiary-text-color);
     font-size: clamp(0.8rem, 0.8rem + 1dvw, 1.5rem);
     margin: 0;
+    transition: color 0.2s;
 }
+
+    h4:hover {
+        color: rgb(182, 237, 182);
+    }
 
 p {
     color: var(--secondary-text-color);
@@ -54,7 +59,12 @@ p {
 a {
     text-decoration: none;
     color: var(--secondary-text-color);
+    transition: color 0.2s;
 }
+
+    a:hover {
+        color:white;
+    }
 
 hr {
     padding: 0;
